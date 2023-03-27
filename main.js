@@ -17,8 +17,9 @@ console.log(yearEl === null || yearEl === void 0 ? void 0 : yearEl.dataset);
 var str;
 var num;
 var boolean;
-var constant = 'sdasd';
+var strConstant = 'sdasd';
 var varStrNum;
+var int;
 // Arrays -------------------------------------
 var arr = [];
 var arr1 = ['name', 123, true];

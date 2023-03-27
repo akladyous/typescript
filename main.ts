@@ -15,8 +15,9 @@ console.log(yearEl?.dataset);
 let str: String;
 let num: Number;
 let boolean: boolean;
-const constant = 'sdasd';
+const strConstant = 'sdasd';
 let varStrNum: string | Number;
+var int: Number;
 
 // Arrays -------------------------------------
 let arr = [];
