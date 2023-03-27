@@ -6,12 +6,34 @@ var xPlusY = add(1, 1);
 function voidFunction() {
     console.log('void');
 }
-function func1(func) {
-    func.description = 'hello';
-    console.log(func.description);
+var addNumbers1 = function (num1, num2) {
+    return num1 + num2;
+};
+var addTwoNumbers1 = function (x, y) {
+    return x + y;
+};
+var addNumbers2 = function (num1, num2) {
+    if (num2 === void 0) { num2 = addNumbers2.defaultNum2; }
+    return num1 + num2;
+};
+addNumbers2.defaultNum2 = 0; // set the default value for num2
+// ----------------------------------------------------------------------------------
+//Generic Functions
+function firstElement(arr) {
+    return arr[0];
 }
-func1(12);
-{
-    return true;
+firstElement(['a', 'b', 'c']);
+firstElement([true, false, true]);
+// ----------------------------------------------------------------------------------
+function map(arr, func) {
+    return arr.map(func);
 }
-;
+// ----------------------------------------------------------------------------------
+function argsFunc1(numbers) {
+    for (var _i = 0, numbers_1 = numbers; _i < numbers_1.length; _i++) {
+        var num_1 = numbers_1[_i];
+        console.log(num_1);
+    }
+}
+argsFunc1([1, 2, 3, 4]);
+// ----------------------------------------------------------------------------------

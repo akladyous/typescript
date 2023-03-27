@@ -6,20 +6,43 @@ let xPlusY = add(1, 1);
 function voidFunction(): void {
   console.log('void');
 }
-//
-type twoNumArgs = {
-  (x: number, y: number): number;
-};
-const f1: twoNumArgs = (num1: number, num2: number) => {
+// function signature //
+type Signature1 = (num1: number, num2: number) => number;
+const addNumbers1: Signature1 = function (num1: number, num2: number): number {
   return num1 + num2;
 };
-
-type callSingnature = {
-  description: string;
-  (someArg: number): boolean;
+// ----------------------------------------------------------------------------------
+type Signature2 = {
+  (x: number, y: number): number;
 };
-
-function func1(func: callSingnature) {
-  func.description = 'hello';
-  console.log(func.description);
+const addTwoNumbers1: Signature2 = function (x: number, y: number): number {
+  return x + y;
+};
+// ----------------------------------------------------------------------------------
+type Signature3 = {
+  (num1: number, num2: number): number;
+  defaultNum2: number;
+};
+const addNumbers2: Signature3 = (num1, num2 = addNumbers2.defaultNum2) => {
+  return num1 + num2;
+};
+addNumbers2.defaultNum2 = 0; // set the default value for num2
+// ----------------------------------------------------------------------------------
+//Generic Functions
+function firstElement<Type>(arr: Type[]): Type | undefined {
+  return arr[0];
 }
+firstElement(['a', 'b', 'c']);
+firstElement([true, false, true]);
+// ----------------------------------------------------------------------------------
+function map<Input, Output>(arr: Input[], func: (arg: Input) => Output): Output[] {
+  return arr.map(func);
+}
+// ----------------------------------------------------------------------------------
+function argsFunc1(numbers: number[]) {
+  for (const num of numbers) {
+    console.log(num);
+  }
+}
+argsFunc1([1, 2, 3, 4]);
+// ----------------------------------------------------------------------------------
