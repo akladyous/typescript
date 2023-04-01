@@ -38,6 +38,7 @@ firstElement([true, false, true]);
 function map<Input, Output>(arr: Input[], func: (arg: Input) => Output): Output[] {
   return arr.map(func);
 }
+const parsed = map(['1', '2', '3'], (n) => parseInt(n));
 // ----------------------------------------------------------------------------------
 function argsFunc1(numbers: number[]) {
   for (const num of numbers) {
@@ -46,3 +47,12 @@ function argsFunc1(numbers: number[]) {
 }
 argsFunc1([1, 2, 3, 4]);
 // ----------------------------------------------------------------------------------
+function longest<Type extends { length: number }>(a: Type, b: Type) {
+  debugger;
+  if (a.length >= b.length) {
+    return a;
+  } else {
+    return b;
+  }
+}
+longest('a', 'a');
