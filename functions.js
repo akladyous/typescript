@@ -39,7 +39,6 @@ function argsFunc1(numbers) {
 argsFunc1([1, 2, 3, 4]);
 // ----------------------------------------------------------------------------------
 function longest(a, b) {
-    debugger;
     if (a.length >= b.length) {
         return a;
     }
