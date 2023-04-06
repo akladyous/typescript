@@ -18,6 +18,7 @@ type Signature2 = {
 const addTwoNumbers1: Signature2 = function (x: number, y: number): number {
     return x + y;
 };
+const arrowFunctionSignature: Signature2 = (x: number, y: number) => 3;
 // ----------------------------------------------------------------------------------
 type Signature3 = {
     (num1: number, num2: number): number;
@@ -55,3 +56,15 @@ function longest<Type extends { length: number }>(a: Type, b: Type) {
     }
 }
 longest('a', 'a');
+
+type SerializationOption = {
+    format?: { indend: number };
+};
+
+function serializeJson(value: any, options?: SerializationOption) {
+    const indentation = options?.format?.indend;
+    return JSON.stringify(value, null, indentation);
+}
+const user = { name: 'paolo' };
+serializeJson(user);
+serializeJson(user, { format: { indend: 2 } });

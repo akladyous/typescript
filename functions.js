@@ -12,6 +12,7 @@ var addNumbers1 = function (num1, num2) {
 var addTwoNumbers1 = function (x, y) {
     return x + y;
 };
+var arrowFunctionSignature = function (x, y) { return 3; };
 var addNumbers2 = function (num1, num2) {
     if (num2 === void 0) { num2 = addNumbers2.defaultNum2; }
     return num1 + num2;
@@ -47,3 +48,11 @@ function longest(a, b) {
     }
 }
 longest('a', 'a');
+function serializeJson(value, options) {
+    var _a;
+    var indentation = (_a = options === null || options === void 0 ? void 0 : options.format) === null || _a === void 0 ? void 0 : _a.indend;
+    return JSON.stringify(value, null, indentation);
+}
+var user = { name: 'paolo' };
+serializeJson(user);
+serializeJson(user, { format: { indend: 2 } });
