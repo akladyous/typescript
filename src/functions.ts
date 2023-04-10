@@ -18,7 +18,7 @@ type Signature2 = {
 const addTwoNumbers1: Signature2 = function (x: number, y: number): number {
     return x + y;
 };
-const arrowFunctionSignature: Signature2 = (x: number, y: number) => 3;
+const arrowFunctionSignature: Signature2 = (_x: number, _y: number) => 3;
 // ----------------------------------------------------------------------------------
 type Signature3 = {
     (num1: number, num2: number): number;

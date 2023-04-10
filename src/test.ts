@@ -1,5 +1,5 @@
 // -------------------------------------
-document.querySelector('body')?.addEventListener('click', (e) => {});
+document.querySelector('body')?.addEventListener('click', (_e) => {});
 // -------------------------------------
 let yearEl: HTMLSpanElement | null;
 yearEl = document.querySelector('#year');
@@ -107,4 +107,12 @@ type M = keyof Mapish;
 // -------------------------------------
 interface StringArray {
   [index: number]: string;
+}
+
+
+class Parent {
+  constructor(name: string, id: number) {
+    name = name;
+    id = id;
+  }
 }
