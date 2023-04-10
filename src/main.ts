@@ -20,5 +20,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </p>
   </div>
 `
-
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+let counterTag = document.querySelector<HTMLButtonElement>('#counter')
+setupCounter(counterTag!)
