@@ -7,6 +7,3 @@ class Animal<S extends String, N extends number> {
   }
 
 }
-type A<T> = [T | never] extends [T] ? true : false;
-
-let unaSetta: A<number>;
