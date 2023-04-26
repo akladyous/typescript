@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "target": "ES5",
     "useDefineForClassFields": true,
     "module": "CommonJS",
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
