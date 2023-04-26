@@ -5,15 +5,15 @@ module.exports = {
   semi: true,
   singleQuote: true,
   printWidth: 100,
-  overrides: [
-    {
-      files: ['*.js', '*.jsx', '*.html'],
-      options: {
-        semi: true,
-        tabWidth: 2,
-      },
-    },
-  ],
+  // overrides: [
+  //   {
+  //     files: ['*.js', '*.jsx', '*.html'],
+  //     options: {
+  //       semi: true,
+  //       tabWidth: 2,
+  //     },
+  //   },
+  // ],
   plugins: [
     // require("prettier-plugin-tailwindcss")
   ],

@@ -22,3 +22,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 `
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+const prova: string = 'prova'
+console.log('prova : ', prova)
+console.log('prova : ', prova)
+
+
+
