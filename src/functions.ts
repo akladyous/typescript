@@ -59,7 +59,7 @@ function argsFunc1(numbers: number[]) {
 }
 argsFunc1([1, 2, 3, 4]);
 // ----------------------------------------------------------------------------------
-function longest<Type extends { length: number }>(a: Type, b: Type) {
+function longest<T extends { length: number }>(a: T, b: T) {
     if (a.length >= b.length) {
         return a;
     } else {
