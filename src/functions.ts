@@ -19,6 +19,8 @@ const sum2Nums1: Signature2 = function (x: number, y: number): number {
     return x + y;
 };
 const sum2Nums2: Signature2 = (_x: number, _y: number) => 3;
+sum2Nums1(1,1)
+sum2Nums2(1,1)
 // ----------------------------------------------------------------------------------
 type Signature3 = {
     (num1: number, num2: number): number;
