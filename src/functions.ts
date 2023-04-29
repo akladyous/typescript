@@ -26,16 +26,19 @@ type Signature3 = {
     (num1: number, num2: number): number;
     defaultNum2: number;
 };
-const addNumbers2: Signature3 = (num1, num2 = addNumbers2.defaultNum2) => {
+const sum2Nums3: Signature3 = (num1, num2 = sum2Nums3.defaultNum2) => {
     return num1 + num2;
 };
-addNumbers2.defaultNum2 = 0; // set the default value for num2
+sum2Nums3.defaultNum2 = 0; // set the default value for num2
 // ----------------------------------------------------------------------------------
 type Signature4 = {
   (x: number, y: number) : number;
   defaultValue: number
 }
-
+const sum2Nums4: Signature4 = function( x, y = sum2Nums4.defaultValue ) {
+  return x+y
+}
+sum2Nums4.defaultValue = 0
 // ----------------------------------------------------------------------------------
 //Generic Functions
 function firstElement<Type>(arr: Type[]): Type | undefined {
