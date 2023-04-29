@@ -6,7 +6,7 @@ let xPlusY = add(1, 1);
 function voidFunction(): void {
     console.log('void');
 }
-// function signature //
+// function type expression //
 type Signature1 = (num1: number, num2: number) => number;
 const addNumbers1: Signature1 = function (num1: number, num2: number): number {
     return num1 + num2;
@@ -15,7 +15,7 @@ const addNumbers1: Signature1 = function (num1: number, num2: number): number {
 type Signature2 = {
     (x: number, y: number): number;
 };
-const addTwoNumbers1: Signature2 = function (x: number, y: number): number {
+const sum2Nums1: Signature2 = function (x: number, y: number): number {
     return x + y;
 };
 const arrowFunctionSignature: Signature2 = (_x: number, _y: number) => 3;
