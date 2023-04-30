@@ -60,18 +60,19 @@ function argsFunc1(numbers: number[]) {
 argsFunc1([1, 2, 3, 4]);
 // ----------------------------------------------------------------------------------
 function longest<T extends { length: number }>(a: T, b: T) {
-    if (a.length >= b.length) {
-        return a;
-    } else {
-        return b;
-    }
+  if (a.length >= b.length) {
+    return a;
+  } else {
+    return b;
+  }
 }
 longest('a', 'a');
 
 type SerializationOption = {
-    format?: { indend: number };
+  format?: { indend: number };
 };
 
+// ----------------------------------------------------------------------------------
 function serializeJson(value: any, options?: SerializationOption) {
     const indentation = options?.format?.indend;
     return JSON.stringify(value, null, indentation);
