@@ -2,10 +2,10 @@ type StringToNumber = (input: string) => number;
 let stringToNumber: StringToNumber;
 stringToNumber = (input) => input.length; // Ok
 
-function add(a: number): number;
-function add(a: number, b: number): number;
-function add(a: number, b: number, c: number): number;
-function add(a: number, b?: number, c?:number): number {
+function addNumbers(a: number): number;
+function addNumbers(a: number, b: number): number;
+function addNumbers(a: number, b: number, c: number): number;
+function addNumbers(a: number, b?: number, c?:number): number {
   if (b === undefined && c === undefined) { // if only one parameter is passed
     return a;
   } else { // if two or three parameters are passed

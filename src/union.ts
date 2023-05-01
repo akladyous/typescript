@@ -1,11 +1,12 @@
 enum PostStatus {
-  draft= 0,
-  published = 1,
-  archived = 2,
-  trashed = 3
-
+  Draft= 0,
+  Published = 1,
+  Archived = 2,
+  Trashed = 3
 }
-enum Roles{
+
+
+enum Roles {
   'Admin', 'Owner', 'Power User', 'Supprt', 'Read Only', 'Supervisor'
 }
 
