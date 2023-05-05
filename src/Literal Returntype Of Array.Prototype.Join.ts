@@ -1,3 +1,4 @@
+// https://solverfox.dev/writing/ts-typed-join
 // Sample input
 type Items0 = [];
 type Items1 = ['a'];
