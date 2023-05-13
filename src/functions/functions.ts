@@ -42,7 +42,7 @@ const sum2Nums4: Signature4 = function( x, y = sum2Nums4.defaultValue ) {
 sum2Nums4.defaultValue = 0
 // ----------------------------------------------------------------------------------
 //Generic Functions
-function firstElement<Type>(arr: Type[]): Type | undefined {
+function firstElement<T>(arr: T[]): T | undefined {
     return arr[0];
 }
 firstElement(['a', 'b', 'c']);

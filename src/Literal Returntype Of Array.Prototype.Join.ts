@@ -49,3 +49,4 @@ type HasTail1 = HasTail<Items1>; // false
 type HasTail2 = HasTail<Items2>; // true
 type HasTail3 = HasTail<Items3>; // true
 type HasTail4 = HasTail<Items4>; // true
+
