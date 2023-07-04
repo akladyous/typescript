@@ -1,0 +1,17 @@
+{
+  "name": "typescript",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --watch && vite",
+    "build": "tsc --watch && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4",
+    "vite": "^4.2.0"
+  }
+}
