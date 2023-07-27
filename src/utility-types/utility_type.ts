@@ -84,7 +84,7 @@ const person: PersonWithoutId = {
   email: 'john@example.com',
 };
 // ---------------------------------------------------------------------------------------------------
-type;
+
 // ---------------------------------------------------------------------------------------------------
 type UserTypeWithStringId_2 = UserType extends { id: infer T }
   ? Omit<UserType, 'id'> & { id: string }
